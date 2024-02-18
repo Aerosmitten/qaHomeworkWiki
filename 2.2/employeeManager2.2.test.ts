@@ -17,8 +17,7 @@ const phoneInput: By = By.name("phoneEntry");
 const titleInput: By = By.name("titleEntry");
 const saveButton: By = By.id("saveBtn");
 const cancelButton: By = By.name("cancel");
-const errorCard: By = By.css("errorCard");
-const iansInput: By = By.name("yet-another");
+const errorCard: By = By.css(".errorCard");
 
 describe("Employee Manager 1.2", () => {
 
