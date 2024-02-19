@@ -20,7 +20,7 @@ expect(myFunction(1)).toBe("false");
 import { blockBuster } from "./newFunction";
 
 describe('Testing Block Buster', () => {
-  it('should return the movie set for MovieOne', () => {
+  it('should return the movie set for movie one', () => {
     expect(blockBuster('Movie One')).toBe("Free Guy")
   }); 
   it("should return the movie set for movie two", () => {
