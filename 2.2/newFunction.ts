@@ -1,12 +1,15 @@
 export function myFunction(myNum: number): string {
     if (myNum == 5) {
         return 'true';
-    } else if() {
-        return '';
-    }else if (){
-        return '';
+
+    } else if(myNum < 5 && myNum >=0) {
+        return 'false';
+
+    }else if (myNum > 5){
+        return 'big';
+        
     }else {
-        return '';
+        return 'negative';
     };
 };
 
@@ -18,16 +21,16 @@ EN: Add your own function starting on line 20
 */
 
 export function blockBuster(movie: string): string {
-    if () {
-        return ""; 
-    } else if (movie == "") {
-        return "";
-    } else if (movie == "") {
-        return ""; 
-    } else if (movie == "") {
-        return ""; 
-    } else if (movie == "") {
-        return ''; 
+    if (movie == "Movie One") {
+        return "Free Guy"; 
+    } else if (movie == "Movie Two") {
+        return "Everything, Everywhere, All at Once";
+    } else if (movie == "Movie Three") {
+        return "Surf's Up"; 
+    } else if (movie == "Movie Four") {
+        return "Lilo and Stitch"; 
+    } else if (movie == "Movie Five") {
+        return "Ex Machina"; 
     } else {
         return `I'm sorry we do not carry ${movie}`; 
     }

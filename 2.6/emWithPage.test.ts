@@ -1,4 +1,4 @@
-import { SpecPage } from "./SpecPage";
+import { SpecPage } from "./employeeManagerPage";
 const chromedriver = require("chromedriver");
 import { WebDriver, By, Builder, until, Capabilities } from "selenium-webdriver";
 
@@ -41,11 +41,11 @@ describe("Employee Manager v1.2 ", () => {
 //4. Enter the new name
 //5. Locate and click the save button
 
-await driver.findElement(bernice).click ();
+await driver.findElement(bernice).click();
 await driver.wait(until.elementIsVisible(await driver.findElement(nameInput)));
-await driver.findElement(nameInput).clear ();
+await driver.findElement(nameInput).clear();
 await driver.findElement(nameInput).sendKeys("Oreo Ritz");
-await driver.findElement(saveButton).click ();
+await driver.findElement(saveButton).click();
         });
       });
 
