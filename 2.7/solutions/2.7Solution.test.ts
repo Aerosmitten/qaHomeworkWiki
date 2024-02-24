@@ -27,13 +27,13 @@ let addInterns = async (newInterns) => {
     await pages.setInput(pages.phoInp, newInterns.phone); 
     await pages.setInput(pages.titleInp, newInterns.title); 
     await pages.click(pages.saveBtn); 
-    await pages.driver.sleep(3000); 
+    //await pages.driver.sleep(3000); I had to comment out this line to get the test to pass
 };
 
 test('can add the bake off crew',async () => {
     await pages.navigate(); 
     await pages.getElement(pages.addEm); 
-    for(let i= 0; i < newInterns.length; i ++){
+    for(let i= 0; i < newInterns.length; i++){
         await addInterns(newInterns[i]); 
     }; 
     await pages.driver.quit(); 

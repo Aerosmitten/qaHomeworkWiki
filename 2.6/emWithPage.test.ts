@@ -56,7 +56,7 @@ await driver.findElement(saveButton).click();
 //1. Locate and click the "+ Add Employee" button
 // Not quite sure if I'm needing to edit the new employee or just creating a new employee card 
 
-await driver.findElement(addEmployee).click ();
+await driver.findElement(addEmployee).click();
 await driver.wait(until.elementIsVisible);
         });
       });
@@ -71,11 +71,11 @@ await driver.wait(until.elementIsVisible);
 //4. Enter the new title
 //5. Locate and click the save button
 
-await driver.findElement(phillip).click ();
+await driver.findElement(phillip).click();
 await driver.wait(until.elementIsVisible(await driver.findElement(titleInput)));
-await driver.findElement(titleInput).clear ();
+await driver.findElement(titleInput).clear();
 await driver.findElement(titleInput).sendKeys("Manager of Managers");
-await driver.findElement(saveButton).click ();
+await driver.findElement(saveButton).click();
         });
       });
 }); 
