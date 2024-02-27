@@ -1,4 +1,4 @@
-import { Builder, By, Capabilities, until, WebDriver, WebElement, Actions } from "selenium-webdriver";
+import { Builder, By, Capabilities, until, WebDriver, WebElement, Actions, } from "selenium-webdriver";
 const chromedriver = require('chromedriver'); 
 
 interface Options {
