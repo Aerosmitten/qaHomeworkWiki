@@ -59,9 +59,7 @@ describe("Employee Manager 1.2", () => {
             "Bernice"
             )
         );
-        expect(
-            await (await driver.findElement(nameInput)).getAttribute("value")
-        ).toBe("Bernice Ortiz");
+        expect(await (await driver.findElement(nameInput)).getAttribute("value")).toBe("Bernice Ortiz");
         });
 
         test("A canceled change doesn't persist", async () => {
@@ -110,7 +108,7 @@ describe("Employee Manager 1.2", () => {
             );
             await driver.findElement(bernice).click();
             expect(
-                await (await driver.findElement(nameInput)).getAttribute("value")
+                await (await driver.findElement(nameInput)).getAttribute("data-tti")
             ).toBe("Test Name");
     });
 });
